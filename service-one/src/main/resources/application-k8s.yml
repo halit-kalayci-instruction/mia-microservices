@@ -1,0 +1,10 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+  application:
+    name: service-one
+
+feign:
+  discovery:
+    enabled: true

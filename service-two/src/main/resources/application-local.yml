@@ -1,0 +1,13 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+  application:
+    name: service-two
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000

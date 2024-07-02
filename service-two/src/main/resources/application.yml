@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: service-two
+
+server:
+  port: 8081
+
+HOSTNAME: local
+POD_IP: none
+
+pod:
+  name: ${HOSTNAME}
+  ip: ${POD_IP}

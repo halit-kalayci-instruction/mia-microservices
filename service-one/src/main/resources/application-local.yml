@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+  application:
+    name: service-one
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+
+service-two:
+  url: http://localhost:8081

@@ -1,0 +1,10 @@
+spring:
+  config:
+    activate:
+      on-profile: k8s
+  application:
+    name: service-two
+
+feign:
+  discovery:
+    enabled: true

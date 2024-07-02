@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: service-one
+
+feign:
+  discovery:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+
+service-two:
+  url: http://service-two # Kubernetes ortamında DNS üzerinden erişim
+
+HOSTNAME: local
+POD_IP: none
+
+pod:
+  name: ${HOSTNAME}
+  ip: ${POD_IP}
